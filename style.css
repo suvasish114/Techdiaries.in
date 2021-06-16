@@ -1,0 +1,68 @@
+/* google fonts:
+font-family: 'Abril Fatface', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Righteous', cursive;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Press+Start+2P&family=Righteous&display=swap');
+
+body{
+    font-size: .9em;
+}
+h5,h2{
+    font-family: 'Righteous', cursive;
+}
+a{
+    text-decoration: none;
+}
+.td_post{
+    padding: 1em;
+}
+
+.logo{
+    font-size: 2em;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.navbar{
+    background-color: antiquewhite;
+    padding: 0;
+}
+
+.nav-link:hover{
+    background-color: aqua;
+}
+
+
+/* footer */
+
+.td_footer{
+    color: white;
+    background-color: black;
+}
+
+footer{
+    padding: 1em;
+}
+
+footer div div ul{
+    list-style-type: none;
+}
+
+footer div div ul a{
+    text-decoration: none;
+    color: white;
+}
+footer div div ul a:hover{
+    color:aqua;
+}
+
+.td_footer_link img{
+    margin: 0.4em;
+}
+
+.copyright{
+    padding: 1em;
+}
+.copyright a strong{
+    color: aqua;
+}

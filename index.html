@@ -1,33 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Press+Start+2P&family=Righteous&display=swap"
+        rel="stylesheet">
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home | Tech Diaries</title>
+</head>
 
-    <title>Tech Diaries</title>
-  </head>
-  <body>
-      <section align="center">
-          <img src="./TD_LOGO.png" alt="">
-          <p>
-              This site is under development <br>own by 
-              <a href="https://suvasish114.github.io"><strong>suvasish das</strong></a>.
-          </p>
-      </section>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="logo navbar-brand" href="#">Tech Diaries</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Trending</a></li>
+                            <li><a class="dropdown-item" href="#">Industry</a></li>
+                            <li><a class="dropdown-item" href="#">How to</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- brose by tag -->
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="td_post">
+                        <h2>Tech Diaries blog is under development</h2><hr>
+                        <p>
+                            Techdiaries.in will serve you tech releted letest update and ideasa around you.
+                            owned by <a href="https://suvasish114.github.io/">suvasish das</a>.<br>
+                            <strong>Mail: </strong>
+                            <a href="mailto:techdiaries.blog@gmail.com">techdiaries.blog@gmail.com</a>
+                            <img width="100%" src="./res/TD_LOGO.png" alt="">
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <!-- trending news -->
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <!-- ad -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="td_footer">
+        <footer class="container">
+            <div class="logo">techdiaries.in</div><br>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <ul>
+                        <li>
+                            <h5>About</h1>
+                        </li>
+                        <hr width="50%">
+                        <a href="">
+                            <li>Tech Diaries</li>
+                        </a>
+                        <a href="">
+                            <li>Become an Auth</li>
+                        </a>
+                        <a href="">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="">
+                            <li>Our Team</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <ul>
+                        <li>
+                            <h5>Legal</h5>
+                        </li>
+                        <hr width="50%">
+                        <a href="">
+                            <li>Privacy Policy</li>
+                        </a>
+                        <a href="">
+                            <li>Terms and Service</li>
+                        </a>
+                    </ul>
+                </div>
+                <div align="center" class="col-md-4 col-sm-12 td_footer_link">
+                    <a href=""><img width="30px" src="./res/twitter_icon.svg"></a>
+                    <a href=""><img width="30px" src="./res/linkedin_icon.svg"></a>
+                    <a href=""><img width="30px" src="./res/facebook_icon.svg"></a>
+                    <a href=""><img width="30px" src="./res/reddit_icon.svg"></a>
+                </div>
+            </div>
+            <hr>
+            <div align="center" class="copyright">
+                copyright © 2020-21 | <a href=""><strong>techdiaries.in</strong></a> | All Rights Reserved
+                <br>
+                version 1.0
+            </div>
+        </footer>
+    </section>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
