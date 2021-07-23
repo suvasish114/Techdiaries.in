@@ -11,7 +11,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./test.css">
     <!-- title -->
     <title>{{ title }} | Tech Diaries</title>
 </head>
@@ -34,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Posts</a>
+                        <a class="nav-link active" aria-current="page" href="#">Posts</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -66,58 +65,11 @@
         </div>
     </nav>
 
-    <!-- section1 -->
-    <section class="section1 py-3">
-        <div class="container">
-            <div class="row">
-                <!-- 1st carousel -->
-                <div class="col-md-8 col-sm-6">
-                    <div class="card">
-                        <img class="carousel-1"
-                            src=""
-                            class="card-img" alt="">
-                        <div class="card-img-overlay">
-                            <span class="card-title carousel-title">Card title</span><br>
-                            <span class="card-text carousel-text">This is a wider card with supporting text below as a
-                                natural lead-in to
-                                additional content. This content is a little bit longer.</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2nd 3rd carousel -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img class="carousel-23"
-                            src=""
-                            class="card-img" alt="">
-                        <div class="card-img-overlay">
-                            <span class="card-title carousel-title">Card title</span><br>
-                            <span class="card-text carousel-text">This is a wider card with supporting text below as a
-                                natural lead-in to
-                                additional content. This content is a little bit longer.</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="carousel-23"
-                            src=""
-                            class="card-img" alt="">
-                        <div class="card-img-overlay">
-                            <span class="card-title carousel-title">Card title</span><br>
-                            <span class="card-text carousel-text">This is a wider card with supporting text below as a
-                                natural lead bit longer.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section2 -->
-    <section class="section2">
+    <main class="py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-12 align-items-stretch">
-                    <h4>Featured post</h4>
+                    <h4>All posts</h4>
                     <hr>
 
                     <a href="">
@@ -125,13 +77,17 @@
                             <div class="card">
                                 <div class="row">
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <img class="img-fluid card-image" src="" alt="">
+                                        <img class="img-fluid card-image"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSScUjJlOQdZOip_tt2L0xxu2Hjo9rM2VAyeQ&usqp=CAU"
+                                            alt="">
                                     </div>
                                     <div class="col-md-8 col-sm-8 col-8">
                                         <div class="card-body">
                                             <h4 class="c-red">this is title</h4>
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt enim magnam temporibus odit. Nobis, hic?Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, repudiandae.</p>
-                                            
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt enim
+                                                magnam temporibus odit. Nobis, hic?Lorem ipsum dolor sit, amet
+                                                consectetur adipisicing elit. At, repudiandae.</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -140,27 +96,34 @@
                     </a>
 
                     <div>
-                        <button>Find more</button><br><br>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div>
-                        <a href=""><img class="twitter_logo px-3" height="30px" src="./res/twitter_logo_white.svg"
-                                alt=""></a>
-                        <a href=""><img class="linkedin_logo px-3" height="30px" src="./res/linkedin_logo_white.svg"
-                                alt=""></a>
-                        <a href=""><img class="reddit_logo px-3" height="30px" src="./res/reddit_logo_white.svg"
-                                alt=""></a>
-                    </div>
-                    <div class="py-3">
                         <h4>Popular tags</h4>
                         <hr>
                         <a href=""><span class="badge">badge</span></a>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
+    <br><br>
+
 
     <!-- footer -->
     <section class="TD_footer">

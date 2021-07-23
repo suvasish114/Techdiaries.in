@@ -1,49 +1,212 @@
-/* google fonts:
-font-family: 'Abril Fatface', cursive;
-font-family: 'Press Start 2P', cursive;
-font-family: 'Righteous', cursive;
-*/
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Press+Start+2P&family=Righteous&display=swap');
+/*---- color scheme ----*/
+:root{
+    --black: #191919;
+    --white: #e5e5e5;
+    --primary-red: #ea3057;
+    --primary-gray: #5b5553;
+    --primary-yellow: #F1C40F;
+    --secondary-red: #ee5978;
+    --secondary-gray: #b1a7a5;
 
-body{
-    font-size: .9em;
 }
-h5,h2{
-    font-family: 'Righteous', cursive;
+
+
+/*---- logo ----*/
+.logo1{
+    border: 2px solid var(--white);
+}
+.logo2{
+    border: 2px solid var(--secondary-red);
+}
+.logo-inner-p1{
+    color: var(--primary-red);
+    padding: 0 0.5em;
+    background-color: var(--white);
+}
+.logo-inner-p2{
+    padding-right: 0.5em;
+}
+.logo-inner-p3{
+    color: var(--black);
+    padding: 0 0.5em;
+    background-color: var(--secondary-red);
+}
+.twitter_logo{
+    background-color: #1DA1F2;
+}
+.linkedin_logo{
+    background-color: #0077b5;
+}
+.reddit_logo{
+    background-color: #FF5700;
+}
+
+
+/*---- commom ----*/
+body{
+    background-color: var(--white);
+    color: var(--black);
 }
 a{
+    color: var(--secondary-red);
     text-decoration: none;
 }
-.td_post{
-    padding: 1em;
+a:hover{
+    color: var(--secondary-red);
+}
+p{
+    color: var(--black);
+}
+h1{
+    font-weight: bolder;
+    color: var(--black);
+}
+h4{
+    font-weight: bolder;
+    color: var(--black);
+}
+article{
+    color: var(--black);
+    background-color: white;
+}
+input{
+    color: var(--black);
+    background-color: white;
+    border: 0;
+    margin-bottom: 0.2em;
+}
+.c-white{
+    color:var(--white);
+}
+.c-red{
+    color: var(--primary-red);
+}
+.c-yellow{
+    color: var(--primary-yellow);
+}
+.welcome-carousel{
+    padding: 2em 0;
+}
+.welcome-carousel h1, .welcome-carousel h4{
+    color: var(--white);
 }
 
-.logo{
-    font-size: 2em;
-    font-family: 'Abril Fatface', cursive;
+
+/*---- button ----*/
+button{
+    color: var(--white);
+    border: 0;
+    border-radius: 2px;
+    padding: 0.5em 2em;
+    margin: 5px;
+    background-color: var(--secondary-red);
+}
+button:hover{
+    background-color: var(--primary-red);
 }
 
+
+/*---- card ----*/
+.card{
+    margin-bottom: 1em;
+    border: 1px solid white;
+    border-radius: 0;
+    filter:drop-shadow(2px 2px 2px gray);
+}
+.card:hover{
+    border: 1px solid var(--primary-red);
+}
+.card-image{
+    height: 100%;
+    object-fit: cover;
+}
+.user-profile{
+    margin: 1em;
+    height: 100px;
+    width: 100px;
+    filter: grayscale(100%);
+}
+
+
+/*---- navbar ----*/
 .navbar{
-    background-color: antiquewhite;
-    padding: 0;
+    background-color: var(--primary-red);
+    filter:drop-shadow(2px 2px 2px gray);
 }
-
-.nav-link:hover{
-    background-color: aqua;
+.nav-item:hover{
+    background-color: var(--secondary-red);
 }
-
-
-/* footer */
-
-.td_footer{
+.active{
+    background-color: var(--secondary-red);
+}
+.dropdown-item, .dropdown-menu{
     color: white;
-    background-color: black;
+    background-color: var(--secondary-red);
+}
+.dropdown-item:hover{
+    background-color: var(--secondary-red);
 }
 
-footer{
+
+/*---- carousel ----*/
+.carousel-1{
+    height: 518px;
+    object-fit: cover;
+    
+}
+.carousel-23{
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.carousel-title{
+    font-size: 2em;
+    padding: 0 5px;
+    background-color: var(--primary-red);
+    color: white;
+}
+.carousel-text{
+    font-size: 1em;
+    background-color: white;
+    color: black;
+}
+
+
+/*---- badge ----*/
+.badge{
+    color: var(--white);
+    background-color: var(--primary-red);
+}
+.badge:hover{
+    background-color: var(--secondary-red);
+}
+
+/*---- post ----*/
+.post{
+    padding: 2em 1em;
+    background-color: white;
+    border: 1px solid var(--secondary-gray);
+}
+.post-auth-info{
+    color: var(--secondary-red);
+    text-size-adjust: 0.9em;
+}
+.post-image{
+    max-height: 400px;
+}
+
+
+/*---- footer ----*/
+
+.TD_footer{
     padding: 1em;
+    color: white;
+    background-color: var(--black);
 }
 
+footer div a h4{
+    color: var(--secondary-red);
+}
 footer div div ul{
     list-style-type: none;
 }
@@ -53,7 +216,7 @@ footer div div ul a{
     color: white;
 }
 footer div div ul a:hover{
-    color:aqua;
+    color: var(--secondary-red);
 }
 
 .td_footer_link img{
@@ -64,5 +227,5 @@ footer div div ul a:hover{
     padding: 1em;
 }
 .copyright a strong{
-    color: aqua;
+    color: var(--secondary-red);
 }

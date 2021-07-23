@@ -11,7 +11,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./test.css">
     <!-- title -->
     <title>{{ title }} | Tech Diaries</title>
 </head>
@@ -34,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Posts</a>
+                        <a class="nav-link active" aria-current="page" href="#">Posts</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -66,60 +65,47 @@
         </div>
     </nav>
 
-    <!-- section1 -->
-    <section class="section1 py-3">
-        <div class="container">
+    <main>
+        <section class="p-3 container">
             <div class="row">
-                <!-- 1st carousel -->
-                <div class="col-md-8 col-sm-6">
-                    <div class="card">
-                        <img class="carousel-1"
-                            src=""
-                            class="card-img" alt="">
-                        <div class="card-img-overlay">
-                            <span class="card-title carousel-title">Card title</span><br>
-                            <span class="card-text carousel-text">This is a wider card with supporting text below as a
-                                natural lead-in to
-                                additional content. This content is a little bit longer.</span>
+                <div class="post col-md-8 col-sm-12">
+                    <div>
+                        <h1>TD Blog title goes here</h1>
+                        <p class="post-auth-info">12.jul.2021 | 12:12 pm | suvasish das</p>
+                        <div>
+                            <a href=""><img class="twitter_logo px-3" height="30px" src="./res/twitter_logo_white.svg"
+                                    alt=""></a>
+                            <a href=""><img class="linkedin_logo px-3" height="30px" src="./res/linkedin_logo_white.svg"
+                                    alt=""></a>
+                            <a href=""><img class="reddit_logo px-3" height="30px" src="./res/reddit_logo_white.svg"
+                                    alt=""></a>
+                        </div>
+                        <hr>
+                        <img class="img-fluid post-image" src="./res/demo.png" alt="...">
+                        <div class="p-2 py-5">
+                            
                         </div>
                     </div>
-                </div>
-                <!-- 2nd 3rd carousel -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img class="carousel-23"
-                            src=""
-                            class="card-img" alt="">
-                        <div class="card-img-overlay">
-                            <span class="card-title carousel-title">Card title</span><br>
-                            <span class="card-text carousel-text">This is a wider card with supporting text below as a
-                                natural lead-in to
-                                additional content. This content is a little bit longer.</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="carousel-23"
-                            src=""
-                            class="card-img" alt="">
-                        <div class="card-img-overlay">
-                            <span class="card-title carousel-title">Card title</span><br>
-                            <span class="card-text carousel-text">This is a wider card with supporting text below as a
-                                natural lead bit longer.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section2 -->
-    <section class="section2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-12 align-items-stretch">
-                    <h4>Featured post</h4>
                     <hr>
-
+                    <div>
+                        <h4>Tags:</h4>
+                        <span class="badge">badge</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Comments:</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div align="center" class="card">
+                        <div class="card-body">
+                            <img class="user-profile rounded-circle"
+                            src=""
+                            alt="">
+                            <h4>Lorem, ipsum.</h4><hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eveniet!</p>
+                        </div>
+                    </div>
                     <a href="">
                         <article>
                             <div class="card">
@@ -138,29 +124,13 @@
                             </div>
                         </article>
                     </a>
-
-                    <div>
-                        <button>Find more</button><br><br>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div>
-                        <a href=""><img class="twitter_logo px-3" height="30px" src="./res/twitter_logo_white.svg"
-                                alt=""></a>
-                        <a href=""><img class="linkedin_logo px-3" height="30px" src="./res/linkedin_logo_white.svg"
-                                alt=""></a>
-                        <a href=""><img class="reddit_logo px-3" height="30px" src="./res/reddit_logo_white.svg"
-                                alt=""></a>
-                    </div>
-                    <div class="py-3">
-                        <h4>Popular tags</h4>
-                        <hr>
-                        <a href=""><span class="badge">badge</span></a>
-                    </div>
+                    
+                    <div align="right"><a href=""><button>find more</button></a></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main><br><br>
+
 
     <!-- footer -->
     <section class="TD_footer">
