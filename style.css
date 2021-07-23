@@ -158,7 +158,7 @@ button:hover{
 .carousel-1{
     height: 518px;
     object-fit: cover;
-    
+    filter: brightness(80%);
 }
 .carousel-23{
     height: 250px;
