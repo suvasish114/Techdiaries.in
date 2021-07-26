@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<div class="container py-5">
+    <h1 class="d-flex justify-content-center">About Us</h1>
+        <hr>
+    <div class="row my-5 py-2">
+        <div class="col-md-5 col-sm-12">
+            <img class="my-3 about-img img-fluid" src="{{ url_for('static', filename='res/about1.png') }}" alt="">
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <div class="p-2 my-3">
+                <p><a href="{{ url_for('main.index') }}"><strong>Tech Diaries</strong></a> is an India-based technical blogging page. Our motive is to serve quality content among enthusiast developers.</p>
+                <p>Through TechDiaries we want to build a platform to learn, develop skill and to contribute the socity.</p>
+                <p>
+                    Here is what we going to serve you- <br>
+                    <ul>
+                        <li>A growing community with full of tech enthusiasts.</li>
+                        <li>Quality content, and real world problems.</li>
+                        <li>Explore and deep drive into technology.</li>
+                        <li>Open source enviornment, for better development of this site.</li>
+                    </ul>
+                </p>
+                <p><strong>Contact us: </strong><a href="mailto:techdiaries.blog@gmail.com">techdiaries.blog@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <h1 id="our_team" class="d-flex justify-content-center">Developers zone</h1>
+    <hr>
+    <div class="row py-5">
+        <div class="col-md-4">
+            <div align="center" class="card">
+                <div class="card-body">
+                    <img class="user-profile rounded-circle" src="https://avatars.githubusercontent.com/u/64000509?v=4"
+                        alt="">
+                    <h4>Suvasish Das</h4>
+                    <hr>
+                    <span class="badge">Founder</span>
+                    <span class="badge">Content writer</span>
+                    <span class="badge">Developer</span>
+                    <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, expedita
+                        adipisci debitis mollitia asperiores sequi pariatur ad deserunt sed repellendus!</p>
+                    <hr>
+                    <a href="https://twitter.com/Suvasis38993551"><img class="mx-2" width="30px"
+                            src="{{ url_for('static', filename='/res/twitter_icon.svg') }}"></a>
+                    <a href="https://www.linkedin.com/in/suvasish-das-73862b1a0/"><img class="mx-2" width="30px"
+                            src="{{ url_for('static', filename='/res/linkedin_icon.svg') }}"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="col-md-4">
+            <div align="center" class="card">
+                <div class="card-body">
+                    <img class="user-profile rounded-circle"
+                        src="https://avatars.githubusercontent.com/u/64000509?v=4" alt="">
+                    <h4>Lorem, ipsum.</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eveniet!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div align="center" class="card">
+                <div class="card-body">
+                    <img class="user-profile rounded-circle"
+                        src="https://avatars.githubusercontent.com/u/64000509?v=4" alt="">
+                    <h4>Lorem, ipsum.</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eveniet!</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+{% endblock %}
