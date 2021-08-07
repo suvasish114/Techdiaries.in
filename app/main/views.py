@@ -1,6 +1,8 @@
 from flask import render_template, url_for, redirect
 from . import main
-from .forms import Login_Form, Registration_Form
+from .forms import Login_Form
+# from .. import db
+from ..models import Admin, db
 
 # all routes of page
 
@@ -8,8 +10,7 @@ from .forms import Login_Form, Registration_Form
 @main.route('/')
 @main.route('/home/')
 def index():
-    user_name = 'suvasish'
-    return render_template('index.html', user_name=user_name)
+    return render_template('index.html')
 
 
 #------------------------------------------------------------- blog
@@ -23,47 +24,73 @@ def blog():
 def post():
     return render_template('post.html')
 
-
-# ----------------------------------------------------------- login
-@main.route('/login/', methods=['GET','POST'])
-def login():
+# ----------------------------------------------------------- Admin
+@main.route('/admin/', methods=['GET','POST'])
+def admin():
     form = Login_Form()
 
     # GET request action
     if form.validate_on_submit():
-        print("Email: "+form.login_form_email.data)
-        print("Password: "+form.login_form_pass.data)
-
-        # reseting all data to empty str
-        form.login_form_email.data=''
-        form.login_form_pass.data=''
-
-        # redirect session
-        return redirect(url_for('main.index'))
-
-    return render_template('login.html', form=form)
+        print('-'*10)
+        print('Admin Id: '+form.login_form_id.data)
+        print('Password: '+form.login_form_pass.data)
+        print('-'*10)
 
 
-# ------------------------------------------------------------ registration
-@main.route('/registration/', methods=['GET', 'POST'])
-def registration():
-    form = Registration_Form()
+        # storing in database
+        my_user = Admin(admin_id = form.login_form_id.data, admin_password = form.login_form_pass.data)
+        db.session.add(my_user)
+        db.session.commit()
 
-    # GET request action
-    if form.validate_on_submit():
-        print('Name: '+form.registration_form_name.data)
-        print('Email: '+form.registration_form_email.data)
-        print('Pass: '+form.registration_form_pass.data)
+        return render_template('index.html')
+    return render_template('admin.html', form=form)
 
-        # reseting all data to empty str
-        form.registration_form_name.data=''
-        form.registration_form_email.data=''
-        form.registration_form_pass.data=''
-        form.registration_form_cpass.data=''
+# ----------------------------------------------------------- login
+# @main.route('/login/', methods=['GET','POST'])
+# def login():
+#     form = Login_Form()
 
-        # redirect page
-        return redirect(url_for('main.login'))
-    return render_template('registration.html', form=form)
+#     # GET request action
+#     if form.validate_on_submit():
+#         print("Email: "+form.login_form_email.data)
+#         print("Password: "+form.login_form_pass.data)
+
+#         # storing in database
+#         # db.create_all()
+#         my_user = User(email = form.login_form_email.data, password = form.login_form_pass.data)
+#         db.session.add(my_user)
+#         db.session.commit()
+        
+#         # reseting all data to empty str
+#         form.login_form_email.data=''
+#         form.login_form_pass.data=''
+
+#         # redirect session
+#         return redirect(url_for('main.index'))
+
+#     return render_template('login.html', form=form)
+
+
+# # ------------------------------------------------------------ registration
+# @main.route('/registration/', methods=['GET', 'POST'])
+# def registration():
+#     form = Registration_Form()
+
+#     # GET request action
+#     if form.validate_on_submit():
+#         print('Name: '+form.registration_form_name.data)
+#         print('Email: '+form.registration_form_email.data)
+#         print('Pass: '+form.registration_form_pass.data)
+
+#         # reseting all data to empty str
+#         form.registration_form_name.data=''
+#         form.registration_form_email.data=''
+#         form.registration_form_pass.data=''
+#         form.registration_form_cpass.data=''
+
+#         # redirect page
+#         return redirect(url_for('main.login'))
+#     return render_template('registration.html', form=form)
 
 
 #------------------------------------------------------------- about
@@ -78,7 +105,7 @@ def feedback():
     return render_template('feedback.html')
 
 # ------------------------------------------------------------ user
-@main.route('/user/')
-@main.route('/user/<user_name>')
-def user(user_name):
-    return render_template('user.html', user_name = user_name)
+# @main.route('/user/')
+# @main.route('/user/<user_name>')
+# def user(user_name):
+#     return render_template('user.html', user_name = user_name)

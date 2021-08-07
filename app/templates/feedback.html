@@ -1,5 +1,15 @@
 {% extends 'base.html' %}
 {% block title %}Feedback{% endblock %}
 {% block content %}
-    under dev
+    <div class="container">
+        <div class="col-md-8">
+            <form method="POST">
+                <input placeholder="email" class="p-2 m-2" type="text">
+                <input placeholder="name" class="p-2 m-2" type="text">
+                <input placeholder="feedback" class="p-2 m-2 form-input-100" type="text">
+                <button>Send</button>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
 {% endblock %}

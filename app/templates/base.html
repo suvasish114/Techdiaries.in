@@ -11,6 +11,9 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='res/favicon.png') }}">
+    <!-- google fonts -->
+
     <!-- title -->
     <title>{% block title %}{% endblock %} | Tech Diaries</title>
 </head>
@@ -33,32 +36,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ url_for('main.index') }}">Home</a>
+                        <a class="nav-link active" href="{{ url_for('main.about') }}">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="{{ url_for('main.blog') }}">Posts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ url_for('main.about') }}">About</a>
+                        <a class="nav-link active" href="#">Series</a>
                     </li>
-
-                    {% if user_name %}
-                    <li><span class="nav-link">|</span></li>
+                    <li class="nav-link">
+                        |
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ url_for('main.user') }}">
-                            <img width="20px" src="{{ url_for('static', filename='res/user_icon_white.svg') }}" alt="">
-                            {{ user_name }}
-                        </a>
+                        <a class="nav-link active" href="{{ url_for('main.feedback') }}">Feedback</a>
                     </li>
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ url_for('main.login') }}">Login</a>
-                    </li>
-                    {% endif %}
                 </ul>
                 <form class="d-flex">
                     <input class="px-2" type="search" placeholder="search" aria-label="Search">
-                    <a href=""><img class="px-1" src="{{ url_for('static', filename='/res/search_icon_white.svg') }}" alt=""></a>
+                    <a href=""><img class="px-1" src="{{ url_for('static', filename='/res/search_icon_white.svg') }}"
+                            alt=""></a>
 
                     <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button> -->
@@ -116,10 +112,10 @@
                     </ul>
                 </div>
                 <div align="center" class="col-md-4 col-sm-12 td_footer_link">
-                    <a href=""><img width="30px" src="{{ url_for('static', filename='/res/twitter_icon.svg') }}"></a>
-                    <a href=""><img width="30px" src="{{ url_for('static', filename='/res/linkedin_icon.svg') }}"></a>
-                    <a href=""><img width="30px" src="{{ url_for('static', filename='/res/facebook_icon.svg') }}"></a>
-                    <a href=""><img width="30px" src="{{ url_for('static', filename='/res/reddit_icon.svg') }}"></a>
+                    <a class="TD-icons" href=""><img width="30px" src="{{ url_for('static', filename='/res/twitter_icon.svg') }}"></a>
+                    <a class="TD-icons" href=""><img width="30px" src="{{ url_for('static', filename='/res/linkedin_icon.svg') }}"></a>
+                    <a class="TD-icons" href=""><img width="30px" src="{{ url_for('static', filename='/res/facebook_icon.svg') }}"></a>
+                    <a class="TD-icons" href=""><img width="30px" src="{{ url_for('static', filename='/res/reddit_icon.svg') }}"></a>
                 </div>
             </div>
             <hr>

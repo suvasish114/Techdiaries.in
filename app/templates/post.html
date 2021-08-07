@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<section class="p-3 container">
+<section class="container">
     <div class="row">
         <div class="post col-md-8 col-sm-12">
             <div>
@@ -16,9 +16,37 @@
                             src="{{ url_for('static', filename='res/reddit_logo_white.svg') }}" alt=""></a>
                 </div>
                 <hr>
-                <img class="img-fluid post-image" src="./res/demo.png" alt="...">
+                <img class="img-fluid post-image" src="{{ url_for('static', filename='res/demo.png') }}" alt="...">
                 <div class="p-2 py-5">
-
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo ab architecto facere ipsam
+                        pariatur explicabo quod veniam corporis placeat quia fugit quidem sed aliquid tempore cumque
+                        tenetur, nihil voluptate maiores eius voluptates itaque natus quaerat. Porro culpa odio maiores?
+                        Repellat adipisci aspernatur vero saepe maiores facere vitae veniam? Ea vel tempora, natus
+                        placeat quisquam, a quasi odit, fuga quae inventore pariatur ipsam animi maxime delectus aliquam
+                        praesentium incidunt deserunt debitis? Ex aliquid laborum soluta cumque fuga a temporibus,
+                        recusandae repellendus sequi inventore quod neque illo ipsa totam sit atque, facilis fugit eius
+                        dolorum nihil dolores? Et qui totam neque veniam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis quos sunt, rem totam
+                        quo quas ex, tempora eius at repellendus earum labore perspiciatis, placeat saepe voluptatem.
+                        Placeat illo repellat nisi numquam omnis, officia, ea vitae, laudantium delectus facere
+                        voluptates dolor! Sed similique repellendus maiores libero possimus vel unde est.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis ab quos architecto nihil
+                        consequuntur amet tempora nobis sit asperiores modi rem pariatur, repudiandae, fugit nostrum
+                        provident consequatur magnam maiores neque quisquam incidunt beatae, magni et. Maiores voluptate
+                        incidunt tenetur fuga quam eligendi inventore perferendis? Ab dicta ratione itaque laborum
+                        possimus? Repellat deserunt voluptates itaque veniam, nihil tempora! Quam excepturi cum harum
+                        repellat exercitationem minus fugit, non ut? Iure necessitatibus minus, earum quo deleniti a,
+                        ullam, debitis dolorem labore voluptas doloribus ut tenetur totam officiis reprehenderit? Totam
+                        laudantium, ad odit quidem, dolores est veniam perspiciatis quaerat a ipsum eaque omnis amet
+                        adipisci facere! Error mollitia modi provident aperiam numquam officiis. Reprehenderit,
+                        dignissimos odio perferendis quae quasi possimus ratione modi dolorem id mollitia corrupti,
+                        officiis quis nulla et voluptate repudiandae laudantium provident esse totam! Ut veniam delectus
+                        doloremque eos rerum omnis, impedit ratione excepturi dignissimos soluta neque similique eum
+                        praesentium accusamus iusto. Consectetur tenetur sed voluptates deleniti fugiat quaerat
+                        accusamus ea aliquam tempora in explicabo aspernatur iusto facere soluta, odit ipsa nihil porro
+                        recusandae ut sapiente earum provident sunt officia at? Asperiores excepturi, laborum amet
+                        similique ullam ipsa voluptatibus! Voluptatibus earum molestiae deserunt sit tempore provident
+                        recusandae sint minima aliquid dicta.</p>
                 </div>
             </div>
             <hr>
@@ -40,22 +68,15 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eveniet!</p>
                 </div>
             </div>
+
+            <h4 class="px-1">Related</h4><hr>
             <a href="">
                 <article>
                     <div class="card">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 col-4">
-                                <img class="img-fluid card-image" src="" alt="">
-                            </div>
-                            <div class="col-md-8 col-sm-8 col-8">
-                                <div class="card-body">
-                                    <h4 class="c-red">this is title</h4>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt enim
-                                        magnam temporibus odit. Nobis, hic?Lorem ipsum dolor sit, amet
-                                        consectetur adipisicing elit. At, repudiandae.</p>
-
-                                </div>
-                            </div>
+                        <img class="img-fluid card-image" src="{{ url_for('static', filename='res/demo.png' ) }}"alt="">
+                        <div class="card-body">
+                            <h4 class="c-red">this is title</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti iure omnis cupiditate, ipsum harum quas officia placeat nostrum, qui eligendi quae esse modi ducimus dolores?</p>
                         </div>
                     </div>
                 </article>

@@ -4,10 +4,14 @@
     copyright: 2021, Tech Diaries
 ---------------------------------------------------------*/
 
+/*---- google fonts ----*/
+
+
 /*---- color scheme ----*/
 :root{
     --black: #191919;
-    --white: #e5e5e5;
+    /* --white: #e5e5e5; */
+    --white: #f3f3f3;
     --primary-red: #ea3057;
     --primary-gray: #5b5553;
     --primary-yellow: #F1C40F;
@@ -95,6 +99,9 @@ input{
 .welcome-carousel h1, .welcome-carousel h4{
     color: var(--white);
 }
+.TD-icons:hover{
+    filter: brightness(150%);
+}
 
 
 /*---- button ----*/
@@ -123,6 +130,7 @@ button:hover, .TD_btn:hover{
 }
 .card-image{
     height: 100%;
+    max-height: 250px;
     object-fit: cover;
 }
 .user-profile{
@@ -192,7 +200,7 @@ button:hover, .TD_btn:hover{
 .post{
     padding: 2em 1em;
     background-color: white;
-    border: 1px solid var(--secondary-gray);
+    /* border: 1px solid var(--secondary-gray); */
 }
 .post-auth-info{
     color: var(--secondary-red);
@@ -200,6 +208,14 @@ button:hover, .TD_btn:hover{
 }
 .post-image{
     max-height: 400px;
+}
+
+/*---- form ----*/
+.form-input-100{
+    width: 100%;
+}
+.form-input-50{
+    width: 50%;
 }
 
 
@@ -220,7 +236,6 @@ button:hover, .TD_btn:hover{
     color: white;
     background-color: var(--black);
 }
-
 footer div a h4{
     color: var(--secondary-red);
 }
