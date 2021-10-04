@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500px"
+   height="500px"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="SVGRoot"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs824">
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="2"
+       height="1"
+       patternTransform="translate(0,0) scale(10,10)"
+       id="Strips1_1white">
+      <rect
+         style="fill:white;stroke:none"
+         x="0"
+         y="-0.5"
+         width="1"
+         height="2"
+         id="rect2006" />
+    </pattern>
+    <linearGradient
+       id="linearGradient1017">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1015" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer2"
+     style="display:inline">
+    <path
+       id="path947-7"
+       style="fill:url(#Strips1_1white);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.05"
+       d="M 110.375,38.001953 34.326172,114.56641 169.36719,250.76367 19.814453,398.69336 94.078125,472.95703 243.33789,325.36719 393.47852,476.79297 470.56445,399.70703 320.5293,249.03906 458.4375,112.67383 383.23633,39.212891 246.38281,174.58203 Z" />
+  </g>
+</svg>
